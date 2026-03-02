@@ -1,0 +1,11 @@
+<template>
+    <div class="slds-m-around_medium">
+        <lightning-card title="Send Message" icon-name="standard:task">
+            <div class="slds-p-around_medium">
+                <lightning-textarea label="Mensaje" value={message} onchange={handleMessageChange} ></lightning-textarea>
+                <lightning-button variant="brand" class="slds-m-top_small" label="Enviar" onclick={handleSend}></lightning-button>
+            </div>
+        </lightning-card>
+    </div>
+    
+</template>

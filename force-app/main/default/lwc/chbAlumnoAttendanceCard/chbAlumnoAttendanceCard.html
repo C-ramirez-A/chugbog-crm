@@ -1,0 +1,14 @@
+<template>
+    <div class="slds-box slds-m-top_medium">
+        <p><b>Nombre:</b> {alumno.Name}</p>
+        <p><b>CC:</b> {alumno.N_mero_de_identidad__c}</p>
+        <p><b>Estado:</b> {alumno.Estado__c}</p>
+
+        <lightning-button 
+            class="slds-m-top_small"
+            label="Marcar Asistencia" 
+            variant="brand"
+            onclick={handleMarkAttendance}>
+        </lightning-button>
+    </div>
+</template>
