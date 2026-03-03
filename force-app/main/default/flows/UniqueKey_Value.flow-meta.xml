@@ -3,8 +3,13 @@
     <apiVersion>66.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <environments>Default</environments>
+    <formulas>
+        <name>Value</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Alumno__c} &amp; &quot;-&quot; &amp; TEXT({!$Record.Mes__c}) &amp; &quot;-&quot; &amp; TEXT({!$Record.A_o__c})</expression>
+    </formulas>
     <interviewLabel>UniqueKey Value {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>UniqueKey Value</label>
+    <label>UniqueKey Value-v2</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -32,7 +37,7 @@
         <inputAssignments>
             <field>UniqueKey__c</field>
             <value>
-                <stringValue>Alumno__c &amp; &quot;-&quot; &amp;   TEXT(Mes__c)   &amp; &quot;-&quot; &amp; TEXT(A_o__c)</stringValue>
+                <elementReference>Value</elementReference>
             </value>
         </inputAssignments>
         <inputReference>$Record</inputReference>
