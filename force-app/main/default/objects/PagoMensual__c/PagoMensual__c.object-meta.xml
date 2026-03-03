@@ -155,9 +155,10 @@
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <label>Pago Mensual</label>
     <nameField>
+        <displayFormat>PAG-{0000}</displayFormat>
         <label>Pago Mensual Name</label>
         <trackHistory>false</trackHistory>
-        <type>Text</type>
+        <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Pagos Mensuales</pluralLabel>
     <searchLayouts></searchLayouts>
