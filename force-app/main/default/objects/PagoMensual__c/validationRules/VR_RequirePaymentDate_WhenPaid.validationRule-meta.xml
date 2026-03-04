@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_RequirePaymentDate_WhenPaid</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL(EstadoPago__c ,&quot;Pagado&quot;) ,ISBLANK(FechaPago__c))</errorConditionFormula>
+    <errorDisplayField>FechaPago__c</errorDisplayField>
+    <errorMessage>Fecha de Pago es obligatoria cuando el Estado de Pago es &quot;Pagado&quot;.</errorMessage>
+</ValidationRule>
